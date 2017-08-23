@@ -1,0 +1,17 @@
+marathon:
+  url: http://master.mesos
+  container:
+    type: DOCKER
+    docker:
+      forcePullImage: true
+      network: BRIDGE
+      
+global:
+  docker:
+    parameters:
+      -
+        key: log-driver
+        value: syslog
+      -
+        key: log-opt
+        value: syslog-format=rfc3164  

@@ -1,0 +1,13 @@
+marathon:
+  appId: /cool-service-dev
+  instances: 1 
+  
+environment:
+  env:
+    -
+      key: ACTIVE_PROFILES
+      value: dev
+  labels:
+    -
+      key: DCOS_SERVICE_NAME
+      value: cool-service-dev

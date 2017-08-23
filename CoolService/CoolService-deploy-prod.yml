@@ -1,0 +1,19 @@
+marathon:
+  appId: /cool-service-prod
+  instances: 2
+  
+environment:
+  env:
+    -
+      key: ACTIVE_PROFILES
+      value: prod
+    -
+      key: SAY_HELLO_TO
+      value: MesosCon
+  labels:
+    -
+      key: DCOS_SERVICE_NAME
+      value: cool-service-prod
+      
+application:
+  env:
