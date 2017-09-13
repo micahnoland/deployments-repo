@@ -22,7 +22,11 @@ marathon:
       name: my_secret
       source: my_secret
             
-application:     
+application:    
+  env:
+    - 
+      key: MY_SECRET
+      secret: my_secret 
   labels:
     -
       key: DCOS_SERVICE_PORT_INDEX
@@ -30,8 +34,3 @@ application:
     -
       key: DCOS_SERVICE_SCHEME
       value: http
-  env:
-    - 
-      key: MY_SECRET
-      secret: my_secret
-    
