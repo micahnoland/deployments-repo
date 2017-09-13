@@ -1,7 +1,7 @@
 marathon:
   appId: /cool-service-prod
   instances: 2
-  mem: 1536
+  mem: 1536.0
   
 environment:
   env:
